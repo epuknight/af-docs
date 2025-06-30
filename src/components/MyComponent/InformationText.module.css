@@ -1,0 +1,17 @@
+.infoBox {
+  display: flex;              /* chiếm nguyên dòng */
+  color: #2196f3;
+  gap: 8px; /* 👈 khoảng cách giữa icon và text */
+  align-items: center;
+}
+
+.icon {
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+}
+
+.text{
+  font-size	: 16px;
+  font-style: italic;
+}

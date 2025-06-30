@@ -1,0 +1,36 @@
+/* ✅ Dùng biến màu chữ */
+.textPrimary {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ✅ Màu chữ cứng */
+.textWarning {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* ✅ Màu chữ xanh và nền xám */
+.textInfo {
+  color: #2196f3;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+
+/* ✅ Màu chữ tương phản với dark/light */
+.dynamicText {
+  color: var(--dynamic-text);
+  background-color: var(--dynamic-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.centerImage {
+  display: block;
+  margin: 0 auto;
+object-fit: contain; /* giữ ảnh không bị méo nếu set height */
+
+}

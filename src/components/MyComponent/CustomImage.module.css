@@ -1,0 +1,9 @@
+.customImage {
+  width: 100%; /* hoặc một kích thước cụ thể */
+  height: auto;
+  border: 1px solid #827c7c;
+  display: block;
+  margin: 0 auto 16px;
+
+
+}

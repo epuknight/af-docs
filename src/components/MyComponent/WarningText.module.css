@@ -1,0 +1,13 @@
+.alert {
+  display: block; /* hoặc block nếu muốn chiếm full chiều ngang */
+  align-items: center;
+  color: #f0a45d;
+  padding: 6px 10px;
+  gap: 8px; /* 👈 khoảng cách giữa icon và text */
+}
+
+.icon {
+  font-size: 18px;
+  line-height: 1;
+}
+

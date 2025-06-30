@@ -1,0 +1,10 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image {
+  object-fit: contain;
+  vertical-align: middle;
+}
