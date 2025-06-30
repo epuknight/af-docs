@@ -29,7 +29,7 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 - Mở **Chi tiết** của **Phiếu điều chuyển**
 <CustomImage src="/img/dieuchuyen2.png" alt="Ảnh Điều chuyển kho" />
 
-- <SideBySideTextImage text="Chọn"src="/img/xem-chi-tiet.png"  width="70px" height="40px" />
+- <SideBySideTextImage text="Chọn"src="/img/tao-moi.png"  width="70px" height="40px" />
 - Ở Tab **Thông tin phiếu**, điền thông tin vào các ô
 <CustomImage src="/img/dieuchuyen4.png" alt="Ảnh Điều chuyển kho" />
 
@@ -56,7 +56,7 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
 <CustomImage src="/img/dieuchuyen8.png" alt="Ảnh Điều chuyển kho" />
 
-- Sau khi Phiếu điều chuyển <strong><span style={{ color: '#3abaf4' }}>Đã duyệt</span></strong> → Hệ thống tự tạo Phiếu xuất ở tình trạng **Nháp** (Mã phiếu màu xám)
+- Sau khi Phiếu điều chuyển <strong><span style={{ color: '#3abaf4' }}>Đã duyệt</span></strong> → Hệ thống tự tạo Phiếu xuất ở tình trạng **Phiếu nháp** (Mã phiếu màu xám)
 <CustomImage src="/img/dieuchuyen9.png" alt="Ảnh Điều chuyển kho" />
 
 
@@ -104,7 +104,7 @@ Khi Phiếu điều chuyển đang ở trạng thái <strong><span style={{ colo
 <CustomImage src="/img/dieuchuyen13.png" alt="Ảnh Xuất kho" />
 
 - Chọn **Xuất tất cả** nếu đáp ứng số lượng yêu cầu
-- Kiểm tra và <SideBySideTextImage text="bám"src="/img/xuat-kho.png" width="80px" height="60px"/>  
+- Kiểm tra và <SideBySideTextImage text="bấm"src="/img/xuat-kho.png" width="80px" height="60px"/>  
 <WarningText>Trường hợp số lượng thực tế không đủ yêu cầu thì chỉnh sửa số lượng xuất</WarningText>
 <CustomImage src="/img/dieuchuyen14.png" alt="Ảnh Xuất kho" />
 
@@ -211,31 +211,58 @@ Kiểm tra trạng thái của Phiếu điều chuyển
 <CustomImage src="/img/dieuchuyen22.png" alt="Ảnh Xuất kho" />
 
 ### 4.2. Số lượng nhận **thấp hơn** Số lượng gửi
-<div
-  style={{
-    backgroundColor: '#fff8e1', // vàng nhạt
-    padding: '16px',
-    borderRadius: '8px',
-    lineHeight: '1.6',
-  }}
->
-  <p>
-    Khi số lượng hàng thực nhận tại kho <strong>ít hơn</strong> so với số lượng yêu cầu ghi trên Phiếu Nhập kho, hệ thống sẽ tự động tạo Phiếu hoàn trả số lượng chênh lệch <em>(sự chênh lệch giữa số lượng gửi và số lượng thực nhận)</em>.
-    Có 2 hướng xử lý: 
-  </p>
-  <ul style={{ marginLeft: '20px' }}>
-    <li>
-      <strong>Trường hợp 1:</strong> Kho gửi xác nhận hoàn trả → Phiếu hoàn trả được duyệt, hàng được hoàn lại và hoàn tất Phiếu điều chuyển.
-    </li>
-    <li>
-      <strong>Trường hợp 2:</strong> Kho gửi không xác nhận hoàn trả → Xóa Phiếu hoàn trả, sau đó kho nhận chủ động tạo Phiếu nhập kho bổ sung cho phần còn thiếu.
-    </li>
-  </ul>
-</div>
 
 <CustomImage src="/img/dieuchuyen23.png" alt="Ảnh Xuất kho" />
-
 <CustomImage src="/img/dieuchuyen24.png" alt="Ảnh Xuất kho" />
+
+
+
+<div  style={{
+  backgroundColor: '#fff8e1', 
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+}} >
+<p>
+  Khi số lượng <strong>thực nhận tại kho thấp hơn</strong> số lượng yêu cầu trên <strong>Phiếu Nhập kho</strong>, 
+  Hệ thống sẽ <strong>tự động tạo Phiếu hoàn trả</strong> cho phần chênh lệch:
+</p>
+
+<div
+  style={{
+    fontStyle: 'italic',
+    textAlign: 'center' 
+  }}
+>
+  Số lượng chênh lệch = Số lượng gửi – Số lượng thực nhận
+</div>
+<p>Hướng xử lý:  
+  <strong>Kho gửi </strong> xác nhận Phiếu hoàn trả → Sau khi Phiếu hoàn trả đã duyệt, hàng được hoàn lại và Kho phải bấm  hoàn thành Phiếu điều chuyển. </p>
+</div>
+
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#d32f2f' }}>
+  <strong>Trường hợp đặc biệt:</strong>
+</h4>
+<p>
+  Nếu kho nhận <strong>đếm thiếu số lượng thực tế</strong> (tức là nhận đủ nhưng nhập thiếu), có thể xử lý bằng cách:
+</p>
+<ul>
+  <li>Tạo thêm <strong>Phiếu xuất kho bổ sung</strong> từ <strong>Phiếu điều chuyển</strong>.</li>
+  <li>Tiếp tục thực hiện <strong>Phiếu nhập kho mới</strong> cho phần còn thiếu.</li>
+</ul>
+</div>
+
+
 
 - Chọn **Menu (☰)** → **Kho hàng** → **Sản phẩm** → Mở **Chi tiết** của **Nhập kho**  
 <CustomImage src="/img/dieuchuyen27.png" alt="Ảnh Xuất kho" />
@@ -253,7 +280,8 @@ Kiểm tra trạng thái của Phiếu điều chuyển
 <CustomImage src="/img/dieuchuyen30.png" alt="Ảnh Xuất kho" />
 
 
-Vào Phiếu điều chuyển để Kiểm tra số lượng **xuất, nhận, trả**→ Chọn **Hoàn thành** sau khi kiểm tra
+Vào <strong>Phiếu điều chuyển</strong>, Kiểm tra số lượng yêu cầu, xuất, nhập của Phiếu điều chuyển 
+→ Bấm **Hoàn thành**
 <CustomImage src="/img/dieuchuyen33.png" alt="Ảnh Xuất kho" />
 <CustomImage src="/img/dieuchuyen34.png" alt="Ảnh Xuất kho" />
 
@@ -263,50 +291,63 @@ Vào Phiếu điều chuyển để Kiểm tra số lượng **xuất, nhận, t
 <CustomImage src="/img/dieuchuyen35.png" alt="Ảnh Xuất kho" />
 <CustomImage src="/img/dieuchuyen36.png" alt="Ảnh Xuất kho" />
 
+<div  style={{
+  backgroundColor: '#fff8e1', 
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+}} >
+
+
+<p>
+  Khi số lượng thực nhận <strong>vượt hơn</strong> số lượng yêu cầu trên <strong>Phiếu nhập kho</strong>, 
+  Hệ thống sẽ <strong>tự động</strong> tạo <strong>Phiếu xuất kho bổ sung</strong> cho phần chênh lệch:
+
+</p>
+
+
 <div
   style={{
-    backgroundColor: '#fff8e1', // vàng nhạt
-    padding: '16px',
-    borderRadius: '8px',
-    lineHeight: '1.6',
+    fontStyle: 'italic',
+    textAlign: 'center' 
   }}
 >
+  Số lượng chênh lệch = Số lượng nhận – Số lượng gửi
+</div>
   <p>
-    Khi số lượng hàng thực nhận tại kho <strong>nhiều hơn</strong> so với số lượng yêu cầu ghi trên Phiếu Nhập kho, hệ thống sẽ tự động tạo Phiếu Xuất kho bổ sung số lượng chênh lệch <em>(sự chênh lệch giữa số lượng gửi và số lượng thực nhận)</em>.
-    Có 2 hướng xử lý: 
+    Hướng xử lý: 
   </p>
   <ul style={{ marginLeft: '20px' }}>
     <li>
-      <strong>Trường hợp 1:</strong> Tổng số lượng của tất cả Phiếu nhận nhỏ hơn hoặc bằng tổng số lượng yêu cầu trong Phiếu điều chuyển
-      Hệ thống tự động tạo thêm Phiếu Xuất kho bổ sung (trạng thái: Đã xuất) →  Sau khi bổ sung đầy đủ số lượng, tự động tiến hành Hoàn thành Phiếu điều chuyển. 
+      <em><strong>Trường hợp 1:</strong> Tổng số lượng của tất cả Phiếu nhập kho <strong><span style={{ color: '#d32f2f' }}>bằng</span></strong> Tổng số lượng yêu cầu trong Phiếu điều chuyển</em>   
+      Hệ thống tự động tạo thêm <strong>Phiếu xuất kho</strong> (<span style={{ color: '#47c363' }}>Đã xuất kho</span>) → Sau khi bổ sung đầy đủ số lượng, Hệ thống tự động cập nhật trạng thái <span style={{ color: '#47c363' }}>Hoàn thành</span> của <strong>Phiếu điều chuyển</strong>
 
     </li>
     <li>
-      <strong>Trường hợp 2:</strong> Tổng số lượng của tất cả phiếu nhận lớn hơn tổng số lượng yêu cầu trong Phiếu điều chuyển. 
-      Hệ thống tự động Cập nhật lại số lượng điều chuyển bằng cách thay đổi số lượng yêu cầu trong Phiếu điều chuyển → Tạo thêm Phiếu Xuất kho bổ sung (trạng thái: Đã xuất) →  Sau khi bổ sung đầy đủ số lượng, tự động tiến hành Hoàn thành Phiếu điều chuyển. 
+      <em><strong>Trường hợp 2:</strong> Tổng số lượng của tất cả Phiếu nhập kho <strong><span style={{ color: '#d32f2f' }}>lớn hơn</span></strong> Tổng số lượng yêu cầu trong Phiếu điều chuyển</em>    
+      Hệ thống tự động <strong>thay đổi</strong> số lượng yêu cầu trong Phiếu điều chuyển → Tạo thêm <strong>Phiếu xuất kho</strong> (<span style={{ color: '#47c363' }}>Đã xuất kho</span>) → Sau khi bổ sung đầy đủ số lượng, Hệ thống tự động cập nhật trạng thái <span style={{ color: '#47c363' }}>Hoàn thành</span> của <strong>Phiếu điều chuyển</strong>
     </li>
-  </ul>
-</div>
+  </ul></div>
 
-#### 4.3.1 Tổng số lượng của tất cả Phiếu nhận nhỏ hơn hoặc bằng tổng số lượng yêu cầu trong Phiếu điều chuyển
+
+#### 4.3.1. Tổng số lượng của tất cả Phiếu nhập kho <strong><span style={{ color: '#d32f2f' }} >nhỏ hơn hoặc bằng</span></strong> Tổng số lượng yêu cầu trong Phiếu điều chuyển
 
 - Chọn **Menu (☰)** → **Kho hàng** → **Sản phẩm**
 - Chọn **Chi Tiết** của **Xuất kho**
 
-
 <CustomImage src="/img/dieuchuyen39.png" alt="Ảnh Xuất kho" />
 
-(*) Đơn hàng bù được hệ thống <strong>TỰ ĐỘNG TẠO</strong> sau khi<strong> Kho nhập</strong> nhập nhiều hơn so với yêu cầu
-(*) <strong>WRT_SUB</strong> được ghi chú để xác định đơn gửi bù 
-
-- <SideBySideTextImage text="Chọn"src="/img/chi-tiet.png" width="40px" height="35px"/>    
+<InformationText>Mã phiếu là <strong> mã Xuất bù </strong>, Nguồn gồm <strong>mã Phiếu nhập kho</strong> và <strong>mã Phiếu điều chuyển</strong></InformationText>
 <CustomImage src="/img/dieuchuyen40.png" alt="Ảnh Xuất kho" />
+- <SideBySideTextImage text="Chọn"src="/img/chi-tiet.png" width="40px" height="35px"/>  để xem thông tin chi tiết Phiếu xuất bù
 
-
-Quay lại phiếu điều chuyển để Kiểm tra số lượng **xuất, nhận, nhận bù**→ Chọn **Hoàn thành** sau khi kiểm tra
+Vào tab <strong>Phiếu điều chuyển</strong> để kiểm tra số lượng yêu cầu, xuất kho, nhập kho của Phiếu điều chuyển 
 <CustomImage src="/img/dieuchuyen43.png" alt="Ảnh Xuất kho" />
 <CustomImage src="/img/dieuchuyen44.png" alt="Ảnh Xuất kho" />
+
 #### 4.3.2. Tổng số lượng của tất cả phiếu nhận lớn hơn tổng số lượng yêu cầu trong Phiếu điều chuyển
+
 - Chờ a Nghĩa sửa mydinh
 
 ### 4.4. Mã sản phẩm nhận không có trong Phiếu điều chuyển
