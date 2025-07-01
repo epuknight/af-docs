@@ -92,7 +92,6 @@ const config = {
             position: 'left',
             label: 'AF Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
@@ -101,6 +100,11 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
     }),
 };
