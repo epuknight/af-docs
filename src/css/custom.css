@@ -46,3 +46,50 @@
   line-height: 1.6;
 }
 
+details {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+details[open] {
+  padding-bottom: 0.5rem;
+}
+
+details > summary {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 2rem; /* thêm space cho icon */
+  position: relative;
+  list-style: none;
+}
+
+/* Dùng icon CSS shape thay vì ký tự đặc biệt */
+details > summary::before {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border: solid #555;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+/* Xoay mũi tên khi mở */
+details[open] > summary::before {
+  transform: translateY(-50%) rotate(50deg);
+}
+
+/* Nội dung bên trong */
+details > *:not(summary) {
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
