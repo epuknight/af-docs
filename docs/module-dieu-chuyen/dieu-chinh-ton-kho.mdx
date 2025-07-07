@@ -1,0 +1,166 @@
+---
+id: dieu_chinh_ton_kho
+toc_min_heading_level: 2
+toc_max_heading_level: 6
+title: Điều chỉnh tồn kho
+
+sidebar_position: 2
+---
+
+import SideBySideTextImage from '@site/src/components/MyComponent/SideBySideTextImage';
+import WarningText from '@site/src/components/MyComponent/WarningText';
+import InformationText from '@site/src/components/MyComponent/InformationText';
+
+import CustomImage from '@site/src/components/MyComponent/CustomImage';
+
+
+# Điều chỉnh tồn kho
+## 1. Mô tả
+abc
+## 2. Các bước thực hiện
+### 2.1. **Tạo** Phiếu điều chỉnh tồn kho
+
+- Chọn **Menu (☰)** → **Kho hàng** → **Sản phẩm**
+<CustomImage src="/img/dieuchuyen1(test).png" alt="Ảnh Điều chỉnh tồn kho" />
+- Mở **Chi tiết** của **Phiếu điều chỉnh tồn kho**
+<CustomImage src="/img/dieuchinhtonkho.png" alt="Ảnh Điều chỉnh tồn kho" />
+
+- <SideBySideTextImage text="Chọn"src="/img/tao-moi.png"  width="70px" height="40px" />
+- Điền thông tin vào các ô trong **Phiếu Điều chỉnh tồn kho**
+
+<WarningText>**Hình thức kiểm kho** sẽ ảnh hưởng đến việc chọn sản phẩm ở **Phiếu đếm**</WarningText>
+<CustomImage src="/img/chinh-ton-chung1.png" alt="Ảnh Điều chỉnh tồn kho" />
+<div
+  style={{
+    backgroundColor: '#dcf8e0', 
+    padding: '12px 20px',
+    borderRadius: '6px',
+    lineHeight: '1.6',
+    border: '3px solid #dcf8e0',
+  }}
+>
+  <p>**Hình thức kiểm kho** sẽ bao gồm 3 trường hợp như sau:</p>
+  <ul style={{ marginLeft: '20px', paddingLeft: '16px' }}>
+    <li><strong>Trường hợp 1:</strong> Kiểm tra bằng hình thức theo <strong>TẤT CẢ SẢN PHẨM</strong></li>
+    <li><strong>Trường hợp 2:</strong> Kiểm tra bằng hình thức theo <strong>MÃ CHA</strong></li>
+    <li><strong>Trường hợp 3:</strong> Kiểm tra bằng hình thức theo <strong>BIẾN THỂ</strong></li>
+  </ul>
+
+   <strong>Trường hợp <em>Kiểm bằng Tất cả sản phẩm</em> sẽ được áp dụng trong toàn bộ hướng dẫn này.</strong>
+</div>
+  - **Cách 1: Kiểm tra tất cả sản phẩm**   
+    Ở **Phiếu Điều chỉnh tồn kho** → Chọn **Tất cả sản phẩm** → <SideBySideTextImage text="Bấm"src="/img/luu.png" width="70px" height="40px"/>
+    <WarningText>Bấm **Bắt đầu kiểm kê** trước khi tạo phiếu đếm để hệ thống ghi nhận ngày kiểm</WarningText><CustomImage src="/img/kiem-bang-tat-ca-sp1.png" alt="Ảnh Điều chỉnh tồn kho" />
+    #### 2.1.1. Tạo phiếu đếm    
+    Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/chua-dem.png" width="70px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/tao-phieu-dem.png" width="70px" height="50px"/>    
+    <CustomImage src="/img/kiem-bang-tat-ca-sp3.png" alt="Ảnh Điều chỉnh tồn kho" />
+    - **Thêm sản phẩm** gồm 2 cách:
+      - **Cách 1: Hàng loạt (Upload)**    
+      Ở **Chi tiết phiếu đếm** → Chọn **Hàng loạt (Upload)** → Tải Template mẫu → Điền thông tin vào file Template → Chọn file vừa điền để tải lên → Kiểm tra thông tin sản phẩm
+      <CustomImage src="/img/dem-bang-template.png" alt="Ảnh Điều chỉnh tồn kho" />
+      <InformationText>Template mẫu</InformationText>
+      <CustomImage src="/img/mau-template.png" alt="Ảnh Điều chỉnh tồn kho" />     
+      - **Cách 2: Chọn từng Sản phẩm**    
+      Ở **Chi tiết phiếu đếm** → Chọn **Chọn sản phẩm** → Tìm Mã sản phẩm → Điền số lượng → <SideBySideTextImage text="Bấm"src="/img/them-vao.png"  width="70px" height="50px" /> → <SideBySideTextImage text="Bấm"src="/img/hoan-thanh.png" width="70px" height="50px"/> khi kiểm kê xong      
+
+      <WarningText>Khi chọn sản phẩm, tùy vào **Hình thức kiểm kho** ban đầu để tìm sản phẩm</WarningText>
+      <CustomImage src="/img/kiem-bang-tat-ca-sp4.png" alt="Ảnh Điều chỉnh tồn kho" />
+
+    - Kiểm tra lại thông tin của **Phiếu** → <SideBySideTextImage text="Chọn"src="/img/hoan-thanh.png" width="65px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/xac-nhan-so-luong.png" width="90px" height="50px"/>       
+    <CustomImage src="/img/chinh-ton-chung4.png" alt="Ảnh Điều chỉnh tồn kho" />
+    <CustomImage src="/img/chinh-ton-chung6.png" alt="Ảnh Điều chỉnh tồn kho" />
+    #### 2.1.2. Sửa phiếu đếm    
+    <CustomImage src="/img/chinh-sua-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />
+<div  style={{
+    backgroundColor: '#fff8e1', 
+    padding: '16px',
+    borderRadius: '8px',
+    lineHeight: '1.6',
+    marginBottom : '35px',
+    marginLeft: '35px',
+    border: '3px solid #fff8e1'
+}}>
+<ul style={{ marginLeft: '20px' }}>
+    <li>
+      Khi Phiếu đếm ở trạng thái <strong><span style={{ color: '#3abaf4' }}>Đang đếm</span></strong>, người dùng có thể **chỉnh sửa** phiếu đếm
+    </li>
+    <li>
+      Khi Phiếu đếm ở trạng thái <strong><span style={{ color: '#3abaf4' }}>Hoàn thành</span></strong>, người dùng có thể **mở lại** phiếu đếm
+    </li>
+  </ul>
+</div>
+### 2.2. **Xóa** Phiếu điều chỉnh tồn kho
+<div
+  style={{
+    backgroundColor: '#dcf8e0', 
+    padding: '12px 16px',
+    borderRadius: '6px',
+    lineHeight: '1.6',
+    border: '3px solid #dcf8e0',
+  }}
+>
+  <p>Việc **Xóa** <em><strong>Phiếu Điều chỉnh tồn kho</strong></em> sẽ có 2 trường hợp như sau:</p>
+  <ul style={{ marginLeft: '20px', paddingLeft: '16px' }}>
+    <li><strong>Trường hợp 1:</strong> Xóa Phiếu điều chỉnh tồn kho ở tình trạng <strong>không có</strong> Phiếu đếm</li>
+    <li><strong>Trường hợp 2:</strong> Xóa Phiếu điều chỉnh tồn kho ở tình trạng <strong>có</strong> Phiếu đếm</li>
+  </ul>
+</div>
+#### 2.2.1. Không có Phiếu đếm
+<CustomImage src="/img/xoa-phieu-kiem-ke.png" alt="Ảnh Điều chỉnh tồn kho" />
+
+Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/huy.png" width="70px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/xoa.png" width="70px" height="50px"/>
+<CustomImage src="/img/xoa-phieu-kiem-ke1.png" alt="Ảnh Điều chỉnh tồn kho" />
+#### 2.2.2. Có Phiếu đếm
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#d32f2f' }}>
+  <strong>Trường hợp có **Phiếu đếm**</strong>
+</h4>
+<p>
+Phải xóa **Phiếu đếm** trước mới có thể xóa được **Phiếu điều chỉnh tồn kho**
+</p>
+</div>
+###### 2.2.2.1.  **Xóa** Phiếu đếm
+Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/phieu-dem2.png" width="80px" height="50px"/>
+<CustomImage src="/img/xoa-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />
+Ở **Phiếu đếm** → <SideBySideTextImage text="Chọn"src="/img/huy.png" width="80px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/xoa.png" width="80px" height="50px"/>
+<CustomImage src="/img/xoa-phieu-dem1.png" alt="Ảnh Điều chỉnh tồn kho" />
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#d32f2f' }}>
+  <strong>Phiếu đếm ở trạng thái **Đã hủy**</strong>
+</h4>
+<p>
+Khi Phiếu ở trạng thái <strong><span style={{ color: '#3abaf4' }}>Đã hủy</span></strong>, người dùng **không thể mở lại** phiếu đếm, chỉ có thể xóa
+</p>
+</div>
+Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/huy.png" width="80px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/xoa.png" width="80px" height="50px"/>
+<CustomImage src="/img/xoa-phieu-dem2.png" alt="Ảnh Điều chỉnh tồn kho" />
+
+### 2.3. **Mở lại** Phiếu Điều chỉnh tồn kho
+<WarningText>**Phiếu Điều chỉnh tồn kho** không thể tìm hoặc **Mở lại** khi đã bị xóa</WarningText>
+<CustomImage src="/img/mo-lai-phieu-dieu-chinh.png" alt="Ảnh Điều chỉnh tồn kho" />
+
+
+
+
+
+Khi Phiếu đếm ở trạng thái <strong>Hoàn thành</strong> người dùng có thể <SideBySideTextImage text="bấm"src="/img/mo-lai.png" width="80px" height="40px"/> để mở lại Phiếu đếm nếu muốn tiếp tục thực hiện.
+
+  <WarningText>Trường hợp Phiếu đếm ở trạng thái **Đã hủy** sẽ không thể mở lại</WarningText>
+<CustomImage src="/img/sua-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />
+
