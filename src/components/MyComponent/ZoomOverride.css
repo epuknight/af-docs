@@ -1,0 +1,5 @@
+/* Hiệu ứng nền mờ kiểu GitBook */
+.react-medium-image-zoom-overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(6px);
+}

@@ -14,6 +14,7 @@ import InformationText from '@site/src/components/MyComponent/InformationText';
 import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
 
+
 # Điều chỉnh tồn kho
 ## 1. Mô tả
 abc
@@ -37,6 +38,7 @@ abc
     borderRadius: '6px',
     lineHeight: '1.6',
     border: '3px solid #dcf8e0',
+    marginBottom: '20px'
   }}
 >
   <p>**Hình thức kiểm kho** sẽ bao gồm 3 trường hợp như sau:</p>
@@ -46,10 +48,10 @@ abc
     <li><strong>Trường hợp 3:</strong> Kiểm tra bằng hình thức theo <strong>BIẾN THỂ</strong></li>
   </ul>
 
-   <strong>Trường hợp <em>Kiểm bằng Tất cả sản phẩm</em> sẽ được áp dụng trong toàn bộ hướng dẫn này.</strong>
+  Trường hợp <strong><em style={{color:"#1976D2"}}>Kiểm bằng Tất cả sản phẩm</em></strong> sẽ được áp dụng trong toàn bộ hướng dẫn này.
 </div>
-  - **Cách 1: Kiểm tra tất cả sản phẩm**   
-    Ở **Phiếu Điều chỉnh tồn kho** → Chọn **Tất cả sản phẩm** → <SideBySideTextImage text="Bấm"src="/img/luu.png" width="70px" height="40px"/>
+  
+  - Ở **Phiếu Điều chỉnh tồn kho** → Chọn **Tất cả sản phẩm** → <SideBySideTextImage text="Bấm"src="/img/luu.png" width="70px" height="40px"/>
     <WarningText>Bấm **Bắt đầu kiểm kê** trước khi tạo phiếu đếm để hệ thống ghi nhận ngày kiểm</WarningText><CustomImage src="/img/kiem-bang-tat-ca-sp1.png" alt="Ảnh Điều chỉnh tồn kho" />
     #### 2.1.1. Tạo phiếu đếm    
     Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/chua-dem.png" width="70px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/tao-phieu-dem.png" width="70px" height="50px"/>    
@@ -66,7 +68,7 @@ abc
       <WarningText>Khi chọn sản phẩm, tùy vào **Hình thức kiểm kho** ban đầu để tìm sản phẩm</WarningText>
       <CustomImage src="/img/kiem-bang-tat-ca-sp4.png" alt="Ảnh Điều chỉnh tồn kho" />
 
-    - Kiểm tra lại thông tin của **Phiếu** → <SideBySideTextImage text="Chọn"src="/img/hoan-thanh.png" width="65px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/xac-nhan-so-luong.png" width="90px" height="50px"/>       
+    - Kiểm tra lại thông tin **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/hoan-thanh.png" width="65px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/xac-nhan-so-luong.png" width="83px" height="50px"/>       
     <CustomImage src="/img/chinh-ton-chung4.png" alt="Ảnh Điều chỉnh tồn kho" />
     <CustomImage src="/img/chinh-ton-chung6.png" alt="Ảnh Điều chỉnh tồn kho" />
     #### 2.1.2. Sửa phiếu đếm    
@@ -127,7 +129,8 @@ abc
 Phải xóa **Phiếu đếm** trước mới có thể xóa được **Phiếu điều chỉnh tồn kho**
 </p>
 </div>
-###### 2.2.2.1.  **Xóa** Phiếu đếm
+  (*) **Xóa Phiếu đếm**    
+
 Ở **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/phieu-dem2.png" width="80px" height="50px"/>
 <CustomImage src="/img/xoa-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />
 Ở **Phiếu đếm** → <SideBySideTextImage text="Chọn"src="/img/huy.png" width="80px" height="50px"/> → <SideBySideTextImage text="Chọn"src="/img/xoa.png" width="80px" height="50px"/>
@@ -152,15 +155,13 @@ Khi Phiếu ở trạng thái <strong><span style={{ color: '#3abaf4' }}>Đã h�
 <CustomImage src="/img/xoa-phieu-dem2.png" alt="Ảnh Điều chỉnh tồn kho" />
 
 ### 2.3. **Mở lại** Phiếu Điều chỉnh tồn kho
-<WarningText>**Phiếu Điều chỉnh tồn kho** không thể tìm hoặc **Mở lại** khi đã bị xóa</WarningText>
+{/* <WarningText>**Phiếu Điều chỉnh tồn kho** không thể tìm hoặc **Mở lại** khi đã bị xóa</WarningText> */}
 <CustomImage src="/img/mo-lai-phieu-dieu-chinh.png" alt="Ảnh Điều chỉnh tồn kho" />
 
 
 
-
-
-Khi Phiếu đếm ở trạng thái <strong>Hoàn thành</strong> người dùng có thể <SideBySideTextImage text="bấm"src="/img/mo-lai.png" width="80px" height="40px"/> để mở lại Phiếu đếm nếu muốn tiếp tục thực hiện.
+{/* Khi Phiếu đếm ở trạng thái <strong>Hoàn thành</strong> người dùng có thể <SideBySideTextImage text="bấm"src="/img/mo-lai.png" width="80px" height="40px"/> để mở lại Phiếu đếm nếu muốn tiếp tục thực hiện.
 
   <WarningText>Trường hợp Phiếu đếm ở trạng thái **Đã hủy** sẽ không thể mở lại</WarningText>
-<CustomImage src="/img/sua-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />
+<CustomImage src="/img/sua-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" /> */}
 
