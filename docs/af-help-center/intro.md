@@ -4,74 +4,33 @@ title: AF Help Center
 sidebar_position: 1
 ---
 
-# 1. Giới thiệu tổng quan
-## 1.1 Mục tiêu tài liệu
-Tài liệu này được biên soạn nhằm cung cấp hướng dẫn sử dụng hệ thống một cách:
+# 1. Giới thiệu tổng quan về InfoRM
+## 1.1 Giới thiệu phần mềm
+InfoRM là hệ thống phần mềm nội bộ được phát triển nhằm hỗ trợ quản lý thông tin, tối ưu quy trình và nâng cao hiệu quả phối hợp giữa các bộ phận trong doanh nghiệp. Hệ thống được thiết kế theo hướng đơn giản, dễ tiếp cận và phù hợp với nhu cầu sử dụng thực tế của từng phòng ban.
 
-Hiệu quả
-
-Đồng nhất
-
-Chủ động
-
-Mục tiêu là đảm bảo người dùng có thể tiếp cận nhanh, thao tác đúng, và giảm thiểu thời gian xử lý trong quá trình vận hành.
-
-## 1.2 Phạm vi áp dụng
-Tài liệu tập trung vào:
-
-Hướng dẫn thao tác trên hệ thống
-
-Các quy trình vận hành cơ bản liên quan
-
-Không bao gồm:
-
-Quy định nội bộ không liên quan đến hệ thống
-
-Công cụ/phần mềm ngoài hệ thống
-
-Nội dung kỹ thuật cấp lập trình hoặc phát triển hệ thống
+## 1.2 Mục đích tài liệu
+Tài liệu này cung cấp hướng dẫn sử dụng InfoRM ở cấp độ cơ bản, giúp người dùng hiểu rõ cách thao tác với hệ thống, đảm bảo sử dụng đúng quy trình và hạn chế sai sót trong quá trình làm việc.
 
 ## 1.3 Đối tượng sử dụng
-Tài liệu phù hợp với các nhóm người dùng sau:
+Tài liệu dành cho tất cả nhân sự có quyền truy cập InfoRM, bao gồm:
 
-### 1.3.1 Nhân sự mới
-Cần tiếp cận nhanh và nắm được quy trình sử dụng cơ bản.
+- Người mới cần làm quen hệ thống
 
-### 1.3.2 Nhân sự đang vận hành
-Sử dụng để tra cứu nhanh khi thao tác hoặc xử lý tình huống phát sinh.
+- Nhân viên hiện tại cần tra cứu nhanh quy trình
 
-### 1.3.3 Bộ phận phối hợp
-Cần nắm được luồng vận hành hệ thống để hiểu và hỗ trợ đúng cách.
+- Các bộ phận hỗ trợ kỹ thuật, vận hành hoặc quản lý
 
-## 1.4 Lợi ích mang lại
-Giảm phụ thuộc vào truyền miệng khi cần tìm thông tin
+## 1.4 Cách sử dụng tài liệu
+Đọc theo trình tự nếu bạn là người dùng mới, để hiểu rõ toàn bộ luồng sử dụng hệ thống
 
-Hạn chế thao tác sai, tránh hiểu nhầm
+Tra cứu theo mục lục nếu bạn đã quen hệ thống và chỉ cần xem nhanh thao tác cụ thể
 
-Rút ngắn thời gian đào tạo và hỗ trợ
+Mỗi phần tài liệu được trình bày theo cấu trúc: mô tả chức năng → hướng dẫn thao tác → lưu ý quan trọng
 
-Tăng tính chủ động và khả năng tự xử lý
+Tài liệu được cập nhật định kỳ theo phiên bản phần mềm mới nhất
 
-## 1.5 Chính sách cập nhật
-Tài liệu được cập nhật định kỳ hoặc ngay khi có thay đổi liên quan đến:
-
-Tính năng hệ thống
-
-Cấu trúc tổ chức, vai trò người dùng
-
-Luồng xử lý mới hoặc yêu cầu vận hành bổ sung
-
-Khuyến nghị: Luôn sử dụng phiên bản mới nhất để đảm bảo thông tin chính xác.
-
-## 1.6 Hướng dẫn sử dụng tài liệu
-### 1.6.1 Tìm kiếm nhanh
-Sử dụng mục lục hoặc công cụ tìm kiếm để tra cứu theo từ khóa.
-
-### 1.6.2 Ảnh minh họa và ghi chú
-Mỗi thao tác đều đi kèm hình ảnh, chú thích chi tiết.
-
-### 1.6.3 Lưu ý đặc biệt
-Các điểm dễ sai sẽ được đánh dấu nổi bật để hạn chế rủi ro thao tác.
+## 1.5 Phạm vi tài liệu
+Nội dung tập trung vào các tính năng và quy trình sử dụng cơ bản. Những chức năng nâng cao, tích hợp đặc thù theo bộ phận sẽ được cập nhật sau
 
 Việc nắm rõ tài liệu không chỉ giúp thao tác chính xác, mà còn tiết kiệm thời gian hỗ trợ và tăng khả năng xử lý độc lập trong công việc hàng ngày.
 
