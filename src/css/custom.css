@@ -32,6 +32,9 @@
 /* Rút khoảng cách giữa logo và title */
 .navbar__logo {
   margin-right: -10px; /* Mặc định là 8px hoặc 12px, giảm xuống */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar__brand {
@@ -93,3 +96,10 @@ details > *:not(summary) {
   font-size: 0.9rem;
   color: #444;
 }
+
+.navbar__logo img {
+  max-height: 15px; /* hoặc 40px, 24px tùy size fen muốn */
+  height: auto;
+}
+
+

@@ -83,7 +83,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'AF Logo   ',
-          src: 'img/ibasiclogo.jpg',
+          src: 'img/logo.png',
         },
         items: [
           {
