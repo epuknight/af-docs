@@ -13,7 +13,6 @@ import InformationText from '@site/src/components/MyComponent/InformationText';
 
 import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
-
 # Phiếu Nhập Kho
 ## 1. Mô tả
 
@@ -24,15 +23,105 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
 <WarningText>Chỉ những PO ở trạng thái **Gửi nhà cung cấp** và loại PO phải là **Gia công** hoặc **FOB** mới tạo được phiếu nhập kho</WarningText>     
 <CustomImage src="/img/trang-thai-po.png" alt="Ảnh Điều chuyển kho" />
+
 ### 2.1. **Tạo** Phiếu nhập kho
+
 - Mở **Chi tiết** của **Phiếu nhập kho**
 <CustomImage src="/img/dieuchuyen16.png" alt="Ảnh Điều chuyển kho" />
 
 - Ở Tab **Thông tin phiếu**, điền thông tin vào các ô
 <CustomImage src="/img/tao-moi-phieu-nhap.png" alt="Ảnh Điều chuyển kho" />
-- <SideBySideTextImage text="Chọn"src="/img/bat-dau-dem.png" width="80px" height="40px"/> → Nhập số lượng nhập kho → <SideBySideTextImage text="Chọn"src="/img/nhap-tat-ca.png" width="80px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/nhap-kho.png" width="80px" height="40px"/>
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#d32f2f' }}>
+  <strong>Trường hợp không tạo được Phiếu nhập:</strong>
+</h4>
+<p>
+  Nếu không tạo được Phiếu nhập từ mã PO có sẵn, có thể xử lý bằng cách:
+</p>
+<ul>
+  <li>**Kiểm tra lại** trạng thái của mã PO.</li>
+  <li>Liên hệ với phòng **Thu Mua**, phòng **Sản Phẩm** hoặc phòng **Kế Toán** để được hỗ trợ .</li>
+</ul>
+</div>
+- <SideBySideTextImage text="Chọn"src="/img/bat-dau-dem.png" width="80px" height="40px"/> → Điền số lượng nhập kho thực tế → <SideBySideTextImage text="Chọn"src="/img/nhap-kho.png" width="80px" height="40px"/>
 <CustomImage src="/img/nhap-kho-ne.png" alt="Ảnh Điều chuyển kho" />
+
+{/*<div
+  style={{
+    backgroundColor: '#dcf8e0', 
+    padding: '12px 16px',
+    borderRadius: '6px',
+    lineHeight: '1.6',
+    border: '3px solid #dcf8e0',
+    marginBottom: '25px',
+  }}
+>
+  <p>Từ đây sẽ phát sinh 2 trường hợp Nhập kho như sau:</p>
+  <ul style={{ marginLeft: '20px', paddingLeft: '16px' }}>
+    <li><strong>Trường hợp 1:</strong> Số lượng nhận thực tế <strong>vượt hơn hoặc bằng (≥)</strong> Số lượng gửi</li>
+    <li><strong>Trường hợp 2:</strong> Số lượng nhận thực tế <strong>thấp hơn (&lt;) </strong> Số lượng gửi</li>
+  </ul>
+</div>*/}
+
+<div  style={{
+  backgroundColor: '#fff8e1', 
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '3px solid #fff8e1'
+}} >
+<p>
+  Từ đây sẽ phát sinh 2 trường hợp Nhập kho như sau:
+</p>
+
+  <ul style={{ marginLeft: '20px' }}>
+    <li>
+      <em><strong>Trường hợp 1:</strong> Tổng số lượng Nhập thực tế <strong><span style={{ color: '#d32f2f' }}>lớn hơn hoặc bằng</span> (≥)</strong> Tổng số lượng yêu cầu trong Phiếu nhập kho</em>    
+      Hệ thống tự động hoàn thành <strong>Phiếu PO</strong>
+    </li>
+    <li>
+      <em><strong>Trường hợp 2:</strong> Tổng số lượng Nhập thực tế <strong><span style={{ color: '#d32f2f' }}>nhỏ hơn</span> (&lt;)</strong> Tổng số lượng yêu cầu trong Phiếu nhập kho</em>   
+      Nếu người dùng muốn cập nhật số lượng Nhập, quay lại bước **Tạo phiếu nhập kho**
+    </li>
+  </ul></div>
+
+{/* #### 2.1.1. Số lượng nhận thực tế vượt hơn hoặc bằng (≥) số lượng gửi
 <CustomImage src="/img/nhap-kho-ne1.png" alt="Ảnh Điều chuyển kho" />
+  - **→ Hoàn thành PO**
+#### 2.1.2. Số lượng nhận thực tế thấp hơn (&lt;) số lượng gửi
+<CustomImage src="/img/nhap-kho-ne2.png" alt="Ảnh Điều chuyển kho" />
+
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '1.5px solid  #cdd9c3' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#556b4e' }}>
+  <strong>Trường hợp muốn bổ sung số lượng nhập, hãy quay lại bước Tạo phiếu nhập kho</strong>
+</h4>
+</div>
+*/} 
+
+### 2.2. **Hủy** Phiếu nhập kho
+- <SideBySideTextImage text="Chọn"src="/img/huy.png" width="80px" height="40px"/>để hủy Phiếu nhập
+
+<CustomImage src="/img/huy-phieu-nhap.png" alt="Ảnh Điều chuyển kho" />
+- <SideBySideTextImage text="Chọn"src="/img/mo-lai.png" width="80px" height="40px"/>nếu muốn tiếp tục Nhập Phiếu
+- <SideBySideTextImage text="Chọn"src="/img/xoa.png" width="80px" height="40px"/> nếu muốn xóa Phiếu nhập
+<CustomImage src="/img/huy-phieu-nhap1.png" alt="Ảnh Điều chuyển kho" />
 {/*- Chọn Tab **Chọn sản phẩm**
 - **Thêm sản phẩm** gồm 2 cách:
   - **Cách 1: Hàng loạt (Upload)**   
