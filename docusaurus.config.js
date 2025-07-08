@@ -95,7 +95,7 @@ const config = {
         ],
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} Project, Inc. Built by IT.`,
+        copyright: `Copyright © 2025 - Designed by IT`,
       },
       prism: {
         theme: prismThemes.github,
