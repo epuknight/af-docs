@@ -98,7 +98,7 @@ details > *:not(summary) {
 }
 
 .navbar__logo img {
-  max-height: 15px; /* hoặc 40px, 24px tùy size fen muốn */
+  max-height: 30px; /* hoặc 40px, 24px tùy size fen muốn */
   height: auto;
 }
 

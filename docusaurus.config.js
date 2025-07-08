@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AF Docs',
+  title: 'InfoRM Docs',
   tagline: 'Tài liệu nội bộ - Dành cho nhân sự AF',
-  favicon: 'img/ibasiclogo.jpg',
+  favicon: 'img/mydinhaf.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -82,20 +82,20 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         logo: {
-          alt: 'AF Logo   ',
-          src: 'img/logo.png',
+          alt: 'Inform Logo',
+          src: 'img/logoinform.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'AF Docs',
+            label: 'Tài liệu hướng dẫn',
           },
         ],
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} AF Project, Inc. Built by IT.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Project, Inc. Built by IT.`,
       },
       prism: {
         theme: prismThemes.github,

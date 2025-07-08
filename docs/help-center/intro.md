@@ -1,10 +1,10 @@
 ---
 id: intro
-title: AF Help Center
+title: Giới thiệu
 sidebar_position: 1
 ---
 
-# 1. Giới thiệu tổng quan về InfoRM
+# 1. Tổng quan về InfoRM
 ## 1.1 Giới thiệu phần mềm
 InfoRM là hệ thống phần mềm nội bộ được phát triển nhằm hỗ trợ quản lý thông tin, tối ưu quy trình và nâng cao hiệu quả phối hợp giữa các bộ phận trong doanh nghiệp. Hệ thống được thiết kế theo hướng đơn giản, dễ tiếp cận và phù hợp với nhu cầu sử dụng thực tế của từng phòng ban.
 
