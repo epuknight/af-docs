@@ -102,5 +102,11 @@ details > *:not(summary) {
   height: auto;
 }
 
+.navbar__item.custom-nav-doc {
+  font-size: 20px;       /* chỉnh size */
+  font-weight: 500;      /* đậm hơn */
+  margin-left: 2px;     /* cách lề trái tí */
+  text-align: center;    /* center text trong item */
+}
 
 

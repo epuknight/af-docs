@@ -91,6 +91,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tài liệu hướng dẫn',
+            className: 'custom-nav-doc',
           },
         ],
       },
