@@ -261,28 +261,6 @@ Kiểm tra trạng thái của Phiếu điều chuyển
   Kho gửi <strong>xác nhận </strong>Phiếu nhập trả điều chuyển → Hàng được hoàn trả cho Kho gửi</p>
 </div>
 
-<div style={{
-  padding: '16px',
-  borderRadius: '8px',
-  lineHeight: '1.6',
-  marginBottom : '35px',
-  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
-
-}} >
-
-<h4 style={{ color: '#d32f2f' }}>
-  <strong>Trường hợp đặc biệt:</strong>
-</h4>
-<p>
-  Nếu kho nhận <strong>đếm thiếu số lượng thực tế</strong> (tức là nhận đủ nhưng nhập thiếu), có thể xử lý bằng cách:
-</p>
-<ul>
-  <li>Tạo thêm <strong>Phiếu xuất kho bổ sung</strong> từ <strong>Phiếu điều chuyển</strong>.</li>
-  <li>Tiếp tục thực hiện <strong>Phiếu nhập kho mới</strong> cho phần còn thiếu.</li>
-</ul>
-</div>
-
-
 
 - Chọn **Menu (☰)** → **Kho hàng** → **Sản phẩm** → Mở **Chi tiết** của **Nhập kho**  
 <CustomImage src="/img/dieuchuyen27.png" alt="Ảnh Xuất kho" />
@@ -307,6 +285,26 @@ Kiểm tra trạng thái của Phiếu điều chuyển
 <CustomImage src="/img/dieuchuyen34.png" alt="Ảnh Xuất kho" />
 <CustomImage src="/img/dieuchuyen64.jpg" alt="Ảnh Xuất kho" />
 
+<div style={{
+  padding: '16px',
+  borderRadius: '8px',
+  lineHeight: '1.6',
+  marginBottom : '35px',
+  border: '2px solid  #f28b82' // đỏ đậm, bạn có thể đổi mã màu nếu muốn nhạt hơn
+
+}} >
+
+<h4 style={{ color: '#d32f2f' }}>
+  <strong>Trường hợp đặc biệt:</strong>
+</h4>
+<p>
+  Nếu kho nhận <strong>đếm thiếu số lượng thực tế</strong> (tức là nhận đủ nhưng nhập thiếu), có thể xử lý bằng cách:
+</p>
+<ul>
+  <li>Kho gửi tạo thêm <strong>Phiếu xuất kho bổ sung</strong> từ <strong>Phiếu điều chuyển</strong>.</li>
+  <li>Kho nhận tiếp tục thực hiện <strong>Phiếu nhập kho mới</strong> cho phần còn thiếu.</li>
+</ul>
+</div>
 
 ### 4.3. Số lượng nhận <span style={{ color: '#2196f3' }}> **vượt hơn**</span> Số lượng gửi
 
@@ -396,7 +394,5 @@ Nếu có thắc mắc hoặc phát sinh lỗi, vui lòng liên hệ **Bộ ph�
 ### 4.4. Mã sản phẩm nhận không có trong Phiếu điều chuyển
 Trong trường hợp mã sản phẩm nhận được không trùng khớp với mã sản phẩm ghi trên **Phiếu điều chuyển**    
 ⟹ **Tạo mới** một Phiếu điều chuyển → Thực hiện quy trình điều chuyển hàng lại từ đầu
-
-
 
 

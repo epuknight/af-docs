@@ -21,13 +21,35 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 <CustomImage src="/img/dieuchuyen1(test).png" alt="Ảnh Xem tồn kho" />
 - Mở **Chi tiết** của **Tồn kho**
 <CustomImage src="/img/xem-ton-kho.png" alt="Ảnh Xem tồn kho" />
+<div
+  style={{
+    backgroundColor: '#dcf8e0', 
+    padding: '12px 16px',
+    borderRadius: '6px',
+    lineHeight: '1.6',
+    border: '3px solid #dcf8e0',
+  }}
+>
+  <p>Xem **Chi tiết tồn kho** sẽ gồm có 2 trường hợp:</p>
+  <ul style={{ marginLeft: '20px', paddingLeft: '16px' }}>
+    <li><strong>Trường hợp 1:</strong> Kiểm tồn kho thông qua **Mã cha** hoặc **Barcode** cụ thể</li>
+    <li><strong>Trường hợp 2:</strong> Kiểm tất cả sản phẩm</li>
+  </ul>
+</div>
+
+### 2.1. Kiểm tồn kho thông qua **Mã cha** hoặc **Barcode** cụ thể
+
 - Điền chi tiết **Mã cha** hoặc **Barcode** và chọn các **Trạng thái** để kiểm tồn kho
 <CustomImage src="/img/xem-ton-kho1.png" alt="Ảnh Xem tồn kho" />
 - <SideBySideTextImage text="Chọn"src="/img/chi-tiet2.png"  width="70px" height="40px" />  để xem **Chi tiết** tồn của **Kho/Cửa hàng**
 <CustomImage src="/img/xem-ton-kho2.png" alt="Ảnh Xem tồn kho" />
- - Danh sách sản phẩm được liệt kê đã bao gồm **tất cả sản phẩm hiện có trong Kho/Cửa hàng** đó
- - Điền **Mã cha** ở góc dưới nếu muốn kiểm tra sản phẩm cụ thể
- <CustomImage src="/img/xem-ton-kho3.png" alt="Ảnh Xem tồn kho" />
  - <SideBySideTextImage text="Chọn"src="/img/chi-tiet2.png"  width="70px" height="40px" />  để xem **Chi tiết biến thể** và **Lịch sử dịch chuyển**
- <CustomImage src="/img/xem-ton-kho4.png" alt="Ảnh Xem tồn kho" />
+<CustomImage src="/img/xem-ton-kho4.png" alt="Ảnh Xem tồn kho" />
 
+### 2.2 Kiểm tất cả sản phẩm
+
+- **KHÔNG** điền **Mã cha** hoặc **Barcode** → Chọn **Trạng thái** cần kiểm tra → <SideBySideTextImage text="Chọn"src="/img/tim-kiem1.png"  width="120px" height="40px" />
+<CustomImage src="/img/xem-ton-kho5.png" alt="Ảnh Xem tồn kho" />
+- Hệ thống trả về tất cả thông tin tồn theo kho đã chọn
+- Chọn **Tìm mã sản phẩm** ở góc dưới để tìm thông tin sản phẩm cần kiểm tồn
+<CustomImage src="/img/xem-ton-kho6.png" alt="Ảnh Xem tồn kho" />
