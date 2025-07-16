@@ -18,6 +18,10 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 # Điều Chỉnh Tồn Kho (Kế Toán)
 ## 1. Mô tả
 
+<span style={{ fontSize: '20px', fontWeight: 600 }}>
+  Hướng dẫn chi tiết các bước để <strong>Điều chỉnh tồn kho</strong>
+</span>
+
 ## 2. Các bước thực hiện
 ### 2.1. **Tạo** Phiếu điều chỉnh tồn kho
 
@@ -68,9 +72,26 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
       <WarningText>Khi chọn sản phẩm, tùy vào **Hình thức kiểm kho** ban đầu để tìm sản phẩm</WarningText>
       <CustomImage src="/img/kiem-bang-tat-ca-sp4.png" alt="Ảnh Điều chỉnh tồn kho" />
+      <div style={{
+        border: '1px solid #fbc02d',      // viền vàng tươi
+        backgroundColor: '#fffbea',       // nền trắng ngả vàng nhẹ
+        padding: '12px 16px',
+        borderRadius: '8px',
+        fontSize: '14px',
+        color: '#795548'                  // chữ nâu đất nhẹ
+        }}>
+        <strong>⚠️ Lưu ý:</strong>
+        <ul style={{ marginTop: '8px', paddingLeft: '20px' }}>
+            <li><strong>Hình thức kiểm kho bằng MÃ CHA</strong> → Ở phần chọn sản phẩm điền vào **MÃ CHA** đã điền ban đầu</li>
+            <li><strong>Hình thức kiểm kho bằng BIẾN THỂ</strong> → Có thể tìm sản phẩm bằng biến thể đã chọn hoặc bằng **Barcode**</li>
+        </ul>    
+      </div>
 
-    - Kiểm tra lại thông tin **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/hoan-thanh.png" width="65px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/xac-nhan-so-luong.png" width="83px" height="50px"/>       
+    - Kiểm tra lại thông tin **Phiếu Điều chỉnh tồn kho** → <SideBySideTextImage text="Chọn"src="/img/hoan-thanh.png" width="65px" height="40px"/> → <SideBySideTextImage text="Chọn"src="/img/xac-nhan-so-luong.png" width="83px" height="50px"/>    
+    <InformationText><SideBySideTextImage text="Chọn"src="/img/tai-danh-sach-san-pham.png"  width="130px" height="40px" /> để tải xuống danh sách sản phẩm theo **MÃ CHA** hoặc **BIẾN THỂ** đã chọn</InformationText>   
     <CustomImage src="/img/chinh-ton-chung4.png" alt="Ảnh Điều chỉnh tồn kho" />
+    <InformationText>File Excel chứa danh sách sản phẩm (Hình thức kiểm bằng **Tất cả sản phẩm** nên danh sách sẽ hiển thị tất cả sản phẩm)</InformationText>
+    <CustomImage src="/img/danh-sach-san-pham.png" alt="Ảnh Điều chỉnh tồn kho" />
     <CustomImage src="/img/chinh-ton-chung6.png" alt="Ảnh Điều chỉnh tồn kho" />
     #### 2.1.2. Sửa phiếu đếm    
     <CustomImage src="/img/chinh-sua-phieu-dem.png" alt="Ảnh Điều chỉnh tồn kho" />

@@ -16,7 +16,9 @@ import CustomImage from '@site/src/components/MyComponent/CustomImage';
 
 # Phiếu Điều Chuyển
 ## 1. Mô tả
-Quy trình điều chuyển hàng giữa các kho nội bộ
+<span style={{ fontSize: '20px', fontWeight: 600 }}>
+  Quy trình điều chuyển hàng giữa các kho nội bộ
+</span>
 <details>
 
 <summary>Quy trình</summary>
@@ -354,6 +356,11 @@ Kiểm tra trạng thái của Phiếu điều chuyển
     </li>
   </ul></div>
 
+| Trường hợp | SL yêu cầu  | SL xuất | SL nhận | Hướng xử lý                                                                   |
+|:----------:|:-----------:|:-------:|:-------:|-------------------------------------------------------------------------------|
+| 1          | 10          | 8       | 10      | Tự động hoàn thành Phiếu điều chuyển                                          |
+| 2          | 10          | 8       | 9       | Tự động tạo Phiếu xuất bổ sung (bù 1 cái)                                     |
+| 3          | 10          | 8       | 12      | Tự động sửa SL Yêu cầu thành 12 cái và xuất bù 2 cái                          |
 
 #### 4.3.1. Tổng số lượng của tất cả Phiếu nhập kho <strong><span style={{ color: '#d32f2f' }} >bằng </span></strong> Tổng số lượng yêu cầu trong Phiếu điều chuyển
 
@@ -394,5 +401,6 @@ Nếu có thắc mắc hoặc phát sinh lỗi, vui lòng liên hệ **Bộ ph�
 ### 4.4. Mã sản phẩm nhận không có trong Phiếu điều chuyển
 Trong trường hợp mã sản phẩm nhận được không trùng khớp với mã sản phẩm ghi trên **Phiếu điều chuyển**    
 ⟹ **Tạo mới** một Phiếu điều chuyển → Thực hiện quy trình điều chuyển hàng lại từ đầu
+
 
 
